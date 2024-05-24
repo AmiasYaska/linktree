@@ -33,7 +33,7 @@ body {
 }
 
 .nav-link:hover {
-    background-color: var(--dark);
+    background-color: var(--green);
 }
 
 .navbar-button {
