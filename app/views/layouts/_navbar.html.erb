@@ -1,9 +1,23 @@
-This is a Navbar for the LinkTree
+<%= stylesheet_link_tag "navbar" %>
 
-<%= link_to 'Sign up', new_user_registration_path %>
+<div class="navbar">
+  <div class="navbar-brand">
+    <%= link_to image_tag("tree.png", alt: "Logo", style: "width: 40px; color:green;"), home_index_path %>
+  </div>
 
-<%= link_to 'Log out', destroy_user_session_path %>
+  <div class="navbar-links">
 
-<%= link_to 'Log in', new_user_session_path %>
+    <% if user_signed_in? %>
+      <div class="navbar-user">
+       <%= link_to "My Account", edit_user_registration_path, class:"nav-link"%>
+      <%= link_to "Sign out", destroy_user_session_path,class:"nav-link", style:"border:none;"%>
+      </div>
+    <% else %>
+      <div class="navbar-auth">
+        <%= link_to "Sign up", new_user_registration_path, class: "nav-link" %>
+        <%= link_to "Log in", new_user_session_path, class: "nav-link" %>
 
-
+      </div>
+    <% end %>
+  </div>
+</div>
