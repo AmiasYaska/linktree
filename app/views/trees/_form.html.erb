@@ -81,25 +81,25 @@
 
 <!-- Third part -->
 <div id="third-part" style="display:none; margin-top: 30px;">
- <h1 style="font-size: 40px">Select the Style of your Linktree</h1>
-<div class="card-container">
-  <div class="grid">
- <div class="card" id="light-card" onclick="handleCardClick('light')">
-  <p>Light mode</p>
-  <%= form.radio_button :style, "light", style:"position: absolute; top: 0px; left:0px; width: 100%; height: 100%; opacity: 0; ", id:"light" %>
-</div>
+  <h1 style="font-size: 40px">Select the Style of your Linktree</h1>
+  <div class="card-container">
+    <div class="grid">
+  <div class="card" id="light-card" onclick="handleCardClick('light')">
+    <p>Light mode</p>
+    <%= form.radio_button :style, "light", style:"position: absolute; top: 0px; left:0px; width: 100%; height: 100%; opacity: 0; ", id:"light" %>
+  </div>
 
-<div class="card dark-mode" id="dark-card" onclick="handleCardClick('dark')">
-  <%= form.radio_button :style, "dark", style:"position: absolute; top: 0px; left:0px; width: 100%; height: 100%; opacity: 0;", id:"dark" %>
-  <p>Dark Mode</p>
-</div>
+  <div class="card dark-mode" id="dark-card" onclick="handleCardClick('dark')">
+    <%= form.radio_button :style, "dark", style:"position: absolute; top: 0px; left:0px; width: 100%; height: 100%; opacity: 0;", id:"dark" %>
+    <p>Dark Mode</p>
+  </div>
 
-<div class="card rainbow-mode" id="rainbow-card" onclick="handleCardClick('rainbow')">
-  <%= form.radio_button :style, "rainbow", style:"position: absolute; top: 0px; left:0px; width: 100%; height: 100%; opacity: 0; ", id:"rainbow" %>
-  <p>Rainbow Mode</p>
-</div>
+  <div class="card rainbow-mode" id="rainbow-card" onclick="handleCardClick('rainbow')">
+    <%= form.radio_button :style, "rainbow", style:"position: absolute; top: 0px; left:0px; width: 100%; height: 100%; opacity: 0; ", id:"rainbow" %>
+    <p>Rainbow Mode</p>
+  </div>
 
-    </div>
+      </div>
  
 
 </div>
